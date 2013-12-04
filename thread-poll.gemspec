@@ -1,16 +1,16 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'thread/poll/version'
+require 'thread-poll/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "thread-poll"
-  spec.version       = Thread::Poll::VERSION
-  spec.authors       = ["TODO: Write your name"]
+  spec.version       = ThreadPoll::VERSION
+  spec.authors       = ["Genki Takiuchi"]
   spec.email         = ["genki@s21g.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
+  spec.description   = %q{Spawning the native thread without GVL calling an arbitrary function in RubyExt.}
+  spec.summary       = spec.description
+  spec.homepage      = "https://github.com/genki/thread-poll"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
